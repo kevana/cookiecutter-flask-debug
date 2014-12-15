@@ -25,7 +25,7 @@ pip-log.txt
 .tox
 nosetests.xml
 
-# si
+# Translations
 *.mo
 
 # Mr Developer
@@ -40,8 +40,8 @@ output/*/index.html
 # Sphinx
 docs/_build
 
-# Cookiecutter
-output/
+.webassets-cache
 
-bower_components
+# Virtualenvs
 env
+env*
