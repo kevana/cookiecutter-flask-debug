@@ -37,4 +37,4 @@ WORKDIR /{{cookiecutter.app_name}}
 
 # Set the default command to execute    
 # when creating a new container
-CMD gunicorn --debug -w 2 {{cookiecutter.app_name}}.app:create_app\(\) 2>&1
+CMD gunicorn -b 0.0.0.0:8000 -w 2 {{cookiecutter.app_name}}.app:create_app\(\) 2>&1
